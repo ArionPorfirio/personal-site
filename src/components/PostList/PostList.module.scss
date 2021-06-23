@@ -1,0 +1,30 @@
+.main {
+  width: clamp(300px, 90%, 840px);
+  height: 58%;
+  color: var(--text-primary);
+  margin-bottom: 32px;
+
+  h1 {
+    margin: 16px 8px;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin: 0 8px;
+    border: 0;
+    border-radius: 4px;
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+    transition: opacity 0.4s;
+
+    font-weight: bold;
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}

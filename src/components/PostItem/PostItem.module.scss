@@ -1,0 +1,19 @@
+.post_item {
+  div {
+    background: #3a2683;
+    padding: 24px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    transition: opacity 0.4s;
+
+    p {
+      margin-top: 16px;
+    }
+
+    &:hover {
+      opacity: 0.9;
+    }
+    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
