@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { ReactMarkdownOptions, default as Markdown } from 'react-markdown'
+import { Options, default as Markdown } from 'react-markdown'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { dracula } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 
@@ -23,10 +23,7 @@ const components = {
   },
 }
 
-export const CustomMarkdown: FC<ReactMarkdownOptions> = ({
-  children,
-  ...rest
-}) => {
+export const CustomMarkdown: FC<Options> = ({ children, ...rest }) => {
   return (
     <Markdown {...rest} components={components}>
       {children}

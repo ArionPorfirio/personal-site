@@ -24,7 +24,7 @@ export const PostView: FC<PostViewProps> = ({ postInfo, content }) => {
         <a>
           <div className={styles.back_button}>
             <FaArrowLeft size={28} />
-            <h2>Voltar</h2>
+            <h2>Back</h2>
           </div>
         </a>
       </Link>
@@ -33,8 +33,8 @@ export const PostView: FC<PostViewProps> = ({ postInfo, content }) => {
         <header>
           <h1>{postInfo.title}</h1>
           <small>
-            Por <strong>{postInfo.author}</strong>
-            {', '}
+            By <strong>{postInfo.author}</strong>
+            {' at '}
             <strong>{postInfo.date}</strong>
           </small>
           <hr />

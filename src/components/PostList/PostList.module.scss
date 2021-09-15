@@ -25,6 +25,11 @@
       opacity: 0.9;
     }
 
+    &:disabled {
+      opacity: 0.9;
+      cursor: not-allowed;
+    }
+
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 }

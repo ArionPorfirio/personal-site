@@ -22,7 +22,9 @@ export const PostItem: FC<PostItemProps> = ({ item }) => {
         <div>
           <h2>{item.title}</h2>
           <small>
-            Por <strong>{item.author}</strong>, <strong>{item.date}</strong>
+            By <strong>{item.author}</strong>
+            {' at '}
+            <strong>{item.date}</strong>
           </small>
 
           <p>{item.excerpt}</p>

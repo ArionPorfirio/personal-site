@@ -1,10 +1,10 @@
 export const getProfile = () => ({
   avatar: 'https://avatars.githubusercontent.com/u/6798992?v=4',
-  fullName: 'Arion Porfirio',
+  fullname: 'Arion Porfirio',
   job: 'Software Developer',
   github: '#',
+  twitter: '#',
   linkedin: '#',
-  instagram: '#',
   email: 'arionf.porfirio@gmail.com',
 })
 
