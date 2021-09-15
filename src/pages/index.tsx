@@ -107,6 +107,6 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
       pageSize: postsResponse.results_per_page,
       totalPages: postsResponse.total_pages,
     },
-    revalidate: 60 * 2,
+    revalidate: 60 * 5,
   }
 }

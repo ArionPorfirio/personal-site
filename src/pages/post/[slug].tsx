@@ -74,5 +74,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       postInfo,
       content,
     },
+    revalidate: 60 * 5,
   }
 }
