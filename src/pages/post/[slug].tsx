@@ -1,14 +1,15 @@
 import { GetStaticPaths, GetStaticProps } from 'next'
-import Head from 'next/head'
 import Prismic from '@prismicio/client'
 
 import { PostView } from '@components/PostView'
 import { getClient } from '@services/prismic'
+import { Meta } from '@components/Meta'
 
 type PostInfo = {
   title: string
   author: string
   date: string
+  excerpt: string
 }
 
 interface PostProps {
@@ -19,9 +20,7 @@ interface PostProps {
 export default function Post({ postInfo, content }: PostProps) {
   return (
     <>
-      <Head>
-        <title>{postInfo.title} | ari0n.dev</title>
-      </Head>
+      <Meta defaultTitle={postInfo.title} description={postInfo.excerpt} />
       <PostView postInfo={postInfo} content={content} />
     </>
   )
@@ -67,6 +66,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     title: postResponse.data.title[0].text,
     author: postResponse.data.author[0].text,
     date: created_at ? new Date(created_at).toLocaleString() : 'Not available',
+    excerpt: postResponse.data.excerpt[0].text,
   }
 
   return {
