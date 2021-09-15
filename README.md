@@ -1,3 +1,3 @@
 ## Personal Website 🔥
 
-Coming Soon 🤓
+Now here 🤓
